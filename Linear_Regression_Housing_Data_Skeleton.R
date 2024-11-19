@@ -6,9 +6,11 @@ library(ggplot2)
 library(dplyr)
 library(car)
 # 1. Load the data
-
+data <- read.csv("housing_data.csv")
+head(data, 5)
 # 2. Summary statistics
-
+cat("Summary: ")
+summary(data)
 # 3. Calculate mean, mode and median, as well as the standard deviation for each variable
 # Mode function
 
