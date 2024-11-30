@@ -1,4 +1,4 @@
-# Housing-Market
+# 🏡📊 Housing-Market
 This project explores a dataset related to housing prices. The goal is to perform various analyses, including summary statistics, hypothesis testing, and prediction using linear regression.
 [365DataScience](https://learn.365datascience.com/projects/housing-market-data-analysis-in-r-project/?tab=description)
 
@@ -88,13 +88,10 @@ We will now determine if there's a statistically significant difference in the m
 - **Null Hypothesis (H0​):** The median home values are the same for areas with high and low crime rates.
 - **Alternative Hypothesis (H1​):** The median home values differ for areas with high crime rates compared to areas with low crime rates.
 
-  ```
-  t_test_result <- t.test(Median.Home.Value ~ Crime.Category, data = data_cleaned, var.equal = TRUE)
-  t_test_result
-  ```
+
   P-Value is 0.2209, which is greater than 0.05 so we **fail to reject** the null hypothesis and conclude that there is no significant difference
 ## IV- Prediction with linear regression
-In this final part, a linear regression model is built to predict Median.Home.Value based on Average.Rooms, we can visualize it directly by using:
+In this final part, a linear regression model is built to predict Median.Home.Value based on Average.Rooms, we can visualize it with the following code:
 ```
 ggplot(data, aes(x = Average.Rooms, y = Median.Home.Value)) +
   geom_point() +
@@ -103,9 +100,12 @@ ggplot(data, aes(x = Average.Rooms, y = Median.Home.Value)) +
        x = "Average Rooms",
        y = "Median Home Value")
 ```
+![image](https://github.com/user-attachments/assets/58fc8a55-266e-486b-9996-6e6db47cb0cc)
+
+From the graph we can say there is a significant relationship between the average rooms and the median home value, which is linear. There's a strong positive correlation between the two variables. 
 
 ## V- Conclusion
 In this project, we have performed exploratory data analysis, hypothesis testing, and built a prediction model using linear regression. These analyses provide insights into the housing market and how certain variables, such as the number of rooms, influence home prices.
 
-# Demo:
+# ▶️ Demo:
 Link to the demo: [Youtube](https://youtu.be/DDIv-JADZmc)
